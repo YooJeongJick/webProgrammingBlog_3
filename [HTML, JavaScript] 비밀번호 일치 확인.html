@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>[HTML, JavaScript] 비밀번호 일치 확인</title>
+  </head>
+  <body>
+
+    <h3>너 없이는 매일 매일이</h3>
+
+    <div>
+      <input type="text" id="password" />
+      <button id="password_button">확인</button>
+    </div>
+
+    <script>
+
+        var b1 = document.querySelector("#password_button");
+        b1.addEventListener("click", function () {
+            var bt = document.getElementById("password").value;
+            // input 값 가져오기
+
+            if (bt == "재미없어 어쩌지") {
+            // intput 값 일치 확인
+            window.open(
+                "https://www.youtube.com/channel/UCMki_UkHb4qSc0qyEcOHHJw", "_blank");
+            }
+        });
+
+    </script>
+
+  </body>
+</html>
